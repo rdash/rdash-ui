@@ -24,6 +24,7 @@
   ],
   "ignore": [
     "/.*",
+    "index.html",
     "bower.json",
     "gulpfile.js",
     "package.json",

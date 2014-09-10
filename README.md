@@ -2,6 +2,10 @@
 
 Bloat free responsive admin style dashboard.
 
+Live Example:
+
+ * http://rdash.github.io/rdash-ui
+
 ## Installing
 
 ```
