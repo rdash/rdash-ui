@@ -1,17 +1,45 @@
 var gulp = require('gulp'),
   clean = require('gulp-clean'),
   concat = require('gulp-concat'),
+  connect   = require('gulp-connect'),
   less = require('gulp-less'),
   minifycss = require('gulp-minify-css'),
   rename = require('gulp-rename'),
-  rimraf = require('gulp-rimraf'),
-  wrap = require('gulp-wrap');
+  rimraf = require('gulp-rimraf')
+  watch = require('gulp-watch');
 
 var paths = {
   fonts: 'fonts/**.*',
   images: 'img/**/*.*',
   styles: 'less/**/*.less',
 };
+
+/**
+ * Watch src and execute tasks when changes are made
+ */
+gulp.task('watch', function () {
+  gulp.watch([paths.styles], ['less', 'livereload']);
+  gulp.watch([paths.images], ['images', 'livereload']);
+  gulp.watch([paths.fonts], ['fonts', 'livereload']);
+});
+
+/*
+ * Serve the files out of /dist
+ */
+gulp.task('connect', function() {
+  connect.server({
+    root: '.',
+    livereload: true
+  });
+});
+
+/*
+ * Reload the web server
+ */
+gulp.task('livereload', function() {
+  gulp.src('index.html')
+    .pipe(connect.reload());
+});
 
 /*
  * Cleans the distribution directory
@@ -78,3 +106,5 @@ gulp.task('minify', function() {
  * Copy assets and compile less.
  */
 gulp.task('build', ['images', 'fonts', 'less']);
+
+gulp.task('default', ['build', 'connect', 'livereload', 'watch']);

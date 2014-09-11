@@ -9,8 +9,14 @@ Live Example:
 ## Installing
 
 ```
-$ sudo npm install -g grunt
+$ sudo npm install -g gulp
 $ npm install
+```
+
+## Running locally
+
+```
+$ grunt
 ```
 
 ## Building
@@ -20,3 +26,4 @@ $ grunt clean
 $ grunt build
 $ grunt minify
 ```
+
