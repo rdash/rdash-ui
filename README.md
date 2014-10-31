@@ -17,6 +17,7 @@ Check out a live example!
 * [NodeJS](http://nodejs.org/) (with [NPM](https://www.npmjs.org/))
 * [Bower](http://bower.io)
 * [Gulp](http://bower.io)
+
 ### Installation
 1. Clone the repository: `git clone https://github.com/rdash/rdash-ui.git`
 2. Install the NodeJS depencanies: `sudo npm install`. This should automatically run a `bower install` command.
@@ -30,6 +31,7 @@ For full documentation on the dashboard, visit the [Wiki]().
 
 ## Contributing
 > Do not use the `dist` directory for contributions, please edit the `less` files.
+
 Use the `index.html` to test your changes/features.
 ### Pull Requests
 1. Fork this repository.
