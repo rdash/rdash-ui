@@ -4,7 +4,7 @@
     #page-wrapper {
       padding-left: 0;
     }
-    #page-wrapper:not(.active) {
+    #page-wrapper:not(.open) {
       #sidebar-wrapper {
         position: absolute;
         left: -100px;     
@@ -13,7 +13,7 @@
         display: none;
       }
     }
-    #page-wrapper.active #sidebar-wrapper {
+    #page-wrapper.open #sidebar-wrapper {
       position: fixed;
       ul.sidebar li.sidebar-main {
         margin-left: 0px;
@@ -22,7 +22,7 @@
     #sidebar-wrapper ul.sidebar li.sidebar-main, .row.header .meta {
       margin-left: 70px;
     }
-    #sidebar-wrapper ul.sidebar li.sidebar-main, #page-wrapper.active #sidebar-wrapper ul.sidebar li.sidebar-main {
+    #sidebar-wrapper ul.sidebar li.sidebar-main, #page-wrapper.open #sidebar-wrapper ul.sidebar li.sidebar-main {
       transition: margin-left .4s ease 0s;
     }
   }

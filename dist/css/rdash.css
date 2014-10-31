@@ -5,16 +5,16 @@
   height: auto;
 }
 @media only screen and (min-width: 561px) {
-  #page-wrapper.active {
+  #page-wrapper.open {
     padding-left: 250px;
   }
 }
 @media only screen and (max-width: 560px) {
-  #page-wrapper.active {
+  #page-wrapper.open {
     padding-left: 70px;
   }
 }
-#page-wrapper.active #sidebar-wrapper {
+#page-wrapper.open #sidebar-wrapper {
   left: 150px;
 }
 
@@ -23,17 +23,17 @@
   body.hamburg #page-wrapper {
     padding-left: 0;
   }
-  body.hamburg #page-wrapper:not(.active) #sidebar-wrapper {
+  body.hamburg #page-wrapper:not(.open) #sidebar-wrapper {
     position: absolute;
     left: -100px;
   }
-  body.hamburg #page-wrapper:not(.active) ul.sidebar .sidebar-title.separator {
+  body.hamburg #page-wrapper:not(.open) ul.sidebar .sidebar-title.separator {
     display: none;
   }
-  body.hamburg #page-wrapper.active #sidebar-wrapper {
+  body.hamburg #page-wrapper.open #sidebar-wrapper {
     position: fixed;
   }
-  body.hamburg #page-wrapper.active #sidebar-wrapper ul.sidebar li.sidebar-main {
+  body.hamburg #page-wrapper.open #sidebar-wrapper ul.sidebar li.sidebar-main {
     margin-left: 0px;
   }
   body.hamburg #sidebar-wrapper ul.sidebar li.sidebar-main,
@@ -41,7 +41,7 @@
     margin-left: 70px;
   }
   body.hamburg #sidebar-wrapper ul.sidebar li.sidebar-main,
-  body.hamburg #page-wrapper.active #sidebar-wrapper ul.sidebar li.sidebar-main {
+  body.hamburg #page-wrapper.open #sidebar-wrapper ul.sidebar li.sidebar-main {
     transition: margin-left 0.4s ease 0s;
   }
 }
@@ -182,15 +182,15 @@
 /* Fonts */
 @font-face {
   font-family: 'Montserrat';
-  src: url('../../fonts/montserrat-regular-webfont.eot');
-  src: url('../../fonts/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/montserrat-regular-webfont.woff') format('woff'), url('../../fonts/montserrat-regular-webfont.ttf') format('truetype'), url('../../fonts/montserrat-regular-webfont.svg#montserratregular') format('svg');
+  src: url('../fonts/montserrat-regular-webfont.eot');
+  src: url('../fonts/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/montserrat-regular-webfont.woff') format('woff'), url('../fonts/montserrat-regular-webfont.ttf') format('truetype'), url('../fonts/montserrat-regular-webfont.svg#montserratregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   @font-face {
     font-family: 'Montserrat';
-    src: url('../../fonts/montserrat-regular-webfont.svg') format('svg');
+    src: url('../fonts/montserrat-regular-webfont.svg') format('svg');
   }
   select {
     font-family: Arial, Helvetica, sans-serif;
@@ -267,7 +267,7 @@ div.input-mask {
 ul.sidebar .sidebar-main a,
 .sidebar-footer,
 ul.sidebar .sidebar-list a:hover,
-#page-wrapper:not(.active) ul.sidebar .sidebar-title.separator {
+#page-wrapper:not(.open) ul.sidebar .sidebar-title.separator {
   /* Sidebar header and footer color */
   background: #2d3e63;
 }
@@ -332,22 +332,22 @@ ul.sidebar .sidebar-list .menu-icon {
   line-height: 40px;
   width: 70px;
 }
-#page-wrapper:not(.active) ul.sidebar {
+#page-wrapper:not(.open) ul.sidebar {
   bottom: 0;
 }
-#page-wrapper:not(.active) ul.sidebar .sidebar-title {
+#page-wrapper:not(.open) ul.sidebar .sidebar-title {
   display: none;
 }
-#page-wrapper:not(.active) ul.sidebar .sidebar-title.separator {
+#page-wrapper:not(.open) ul.sidebar .sidebar-title.separator {
   display: block;
   height: 2px;
   margin: 13px 0;
 }
-#page-wrapper:not(.active) ul.sidebar .sidebar-list a:hover span {
+#page-wrapper:not(.open) ul.sidebar .sidebar-list a:hover span {
   border-left: 3px solid #e99d1a;
   text-indent: 22px;
 }
-#page-wrapper:not(.active) .sidebar-footer {
+#page-wrapper:not(.open) .sidebar-footer {
   display: none;
 }
 .sidebar-footer {
