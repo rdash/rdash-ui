@@ -18,7 +18,12 @@
   left: 150px;
 }
 
-/* Hamburg Menu */
+/**
+ * Hamburg Menu
+ * When the class of 'hamburg' is applied to the body tag of the document, 
+ * the sidebar changes it's style to attempt to mimic a menu on a phone app,
+ * where the content is overlaying the content, rather than push it.
+ */
 @media only screen and (max-width: 560px) {
   body.hamburg #page-wrapper {
     padding-left: 0;
@@ -257,7 +262,7 @@ div.input-mask {
 /* Sidebar background color */
 /* Sidebar header and footer color */
 /* Sidebar title text colour */
-/*#627cb7*/
+/* Sidebar menu item hover color */
 /**
  * Sidebar
  */
@@ -274,7 +279,7 @@ ul.sidebar .sidebar-list a:hover,
 ul.sidebar {
   position: absolute;
   top: 0;
-  bottom: 45px;
+  bottom: 0;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -375,7 +380,7 @@ ul.sidebar .sidebar-list .menu-icon {
 /* Sidebar background color */
 /* Sidebar header and footer color */
 /* Sidebar title text colour */
-/*#627cb7*/
+/* Sidebar menu item hover color */
 
 /**
  * Widgets
