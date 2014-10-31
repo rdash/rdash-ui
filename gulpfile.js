@@ -18,7 +18,6 @@ var paths  = {
  */
 gulp.task('watch', function() {
     gulp.watch([paths.styles], ['less', 'livereload']);
-    gulp.watch([paths.images], ['images', 'livereload']);
     gulp.watch([paths.fonts], ['fonts', 'livereload']);
 });
 
@@ -82,14 +81,6 @@ gulp.task('clean-fonts', function() {
 });
 
 /*
- * Copy images to dist directory
- */
-gulp.task('images', function() {
-    return gulp.src(paths.images)
-        .pipe(gulp.dest('dist/img'));
-});
-
-/*
  * Copy fonts to dist directory
  */
 gulp.task('fonts', function() {
@@ -120,6 +111,6 @@ gulp.task('minify', function() {
 /*
  * Copy assets and compile less.
  */
-gulp.task('build', ['images', 'fonts', 'less']);
+gulp.task('build', ['fonts', 'less']);
 
 gulp.task('default', ['build', 'connect', 'livereload', 'watch']);
