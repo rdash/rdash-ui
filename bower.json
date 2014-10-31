@@ -1,7 +1,7 @@
 {
     "name": "rdash-ui",
     "description": "Bloat free responsive admin style dashboard.",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "homepage": "https://rdash.github.io/rdash-ui/",
     "repository": {
         "type": "git",

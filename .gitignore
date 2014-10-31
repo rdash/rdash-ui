@@ -37,3 +37,6 @@ Icon
 
 # Node modules
 node_modules
+
+# IDEA
+/.idea
