@@ -39,7 +39,7 @@ For full documentation on the dashboard, visit the [Wiki]().
 1. Clone the repository: `git clone https://github.com/rdash/rdash-ui.git`
 2. Install the NodeJS depencanies: `sudo npm install`. This should automatically run a `bower install` command.
 3. Run the gulp build task: `gulp build`.
-4. Run the gulp default task: `gulp`. This will build any changes made automatically, and also run a live reload server on [http://localhost:8080](http://localhost:8080).
+4. Run the gulp default task: `gulp`. This will build any changes made automatically, and also run a live reload server on [http://localhost:8888](http://localhost:8080).
 
 All project distribution files will be located within the `dist` directory. Use the `index.html` to test your changes/features.
 
