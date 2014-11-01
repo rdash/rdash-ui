@@ -411,9 +411,6 @@ ul.sidebar .sidebar-list .menu-icon {
 .widget .widget-header i {
   margin-right: 5px;
 }
-.widget .widget-header input {
-  width: 25%;
-}
 .widget .widget-body {
   padding: 20px;
 }
@@ -471,6 +468,14 @@ ul.sidebar .sidebar-list .menu-icon {
   line-height: 66px;
   color: #ffffff;
   font-size: 30px;
+}
+.widget .widget-footer {
+  border-top: 1px solid #e9e9e9;
+  padding: 10px;
+}
+.widget .widget-title .pagination,
+.widget .widget-footer .pagination {
+  margin: 0;
 }
 .widget .widget-content .title {
   font-size: 28px;
