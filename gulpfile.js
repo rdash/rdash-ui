@@ -93,20 +93,15 @@ gulp.task('fonts', function() {
  * Compile less
  */
 gulp.task('less', function() {
-    return gulp.src(paths.styles)
+    gulp.src(paths.styles)
         .pipe(less())
         .pipe(concat('rdash.css'))
         .pipe(gulp.dest('dist/css'));
-});
 
-/*
- * Minify css
- */
-gulp.task('minify', function() {
-    gulp.src('dist/css/rdash.css')
+    return gulp.src('dist/css/rdash.css')
         .pipe(minifycss())
         .pipe(rename('rdash.min.css'))
-        .pipe(gulp.dest('dist/css/'))
+        .pipe(gulp.dest('dist/css/'))    
 });
 
 /*
