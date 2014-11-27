@@ -300,6 +300,9 @@ ul.sidebar .sidebar-main a {
   font-size: 18px;
   line-height: 60px;
 }
+ul.sidebar .sidebar-main a:hover {
+  cursor: pointer;
+}
 ul.sidebar .sidebar-main .menu-icon {
   float: right;
   font-size: 18px;
